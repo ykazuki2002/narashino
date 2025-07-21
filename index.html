@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゴミ出し日通知アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ゴミ出し日通知設定</h1>
+    <div class="setting-form">
+        <select id="garbage-type">
+            <option value="燃えるゴミ">燃えるゴミ</option>
+            <option value="燃えないゴミ">燃えないゴミ</option>
+            <option value="資源ゴミ">資源ゴミ</option>
+            <option value="粗大ゴミ">粗大ゴミ</option>
+        </select>
+        
+        <select id="week-of-month">
+            <option value="every">毎週</option>
+            <option value="1">第1</option>
+            <option value="2">第2</option>
+            <option value="3">第3</option>
+            <option value="4">第4</option>
+            <option value="5">第5</option>
+        </select>
+
+        <select id="day-of-week">
+            <option value="1">月曜日</option>
+            <option value="2">火曜日</option>
+            <option value="3">水曜日</option>
+            <option value="4">木曜日</option>
+            <option value="5">金曜日</option>
+            <option value="6">土曜日</option>
+            <option value="0">日曜日</option>
+        </select>
+        <button id="save-button">保存</button>
+    </div>
+
+    <h2>設定済みスケジュール</h2>
+    <ul id="schedule-list">
+        </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
